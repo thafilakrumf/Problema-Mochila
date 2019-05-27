@@ -36,6 +36,5 @@ public class Knapsack {
     }
     return new int[]{v,w};
   }
-
 }
 

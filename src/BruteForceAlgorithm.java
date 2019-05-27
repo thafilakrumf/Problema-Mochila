@@ -2,7 +2,7 @@ public class BruteForceAlgorithm {
   
 
   public void execute(Knapsack knapsack) {
-   long inicio = System.currentTimeMillis();
+	long inicio = System.currentTimeMillis();
     int size = knapsack.size();
     int solution[] = new int[size];
     
@@ -45,7 +45,9 @@ public class BruteForceAlgorithm {
     System.out.println(String.format("%1$" + size + "s", Integer.toBinaryString(s)).replace(' ', '0'));
     System.out.println("v = "+maxValue+" w = "+minWeight);
     
-  long fim = System.currentTimeMillis(); 
- System.out.println("Duração: "+ (fim - inicio)+ " milissegundos ");
+    long fim = System.currentTimeMillis(); 
+    long duracao = fim - inicio;
+    System.out.println("Duração: "+ duracao + " milissegundos ");
+    System.out.println("Duração: "+ (duracao/1000)+ " segundos ");
   }
 }
